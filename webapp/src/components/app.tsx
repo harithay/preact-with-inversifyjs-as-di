@@ -53,7 +53,7 @@ export default class App extends Component<any, AppState> {
                 <div class="todo-list">
                     {
                         // Render current list
-                        this.state.listItems.map(item => {
+                        this.state.listItems.map((item) => {
                             return <div>{item}</div>
                         })
                     }

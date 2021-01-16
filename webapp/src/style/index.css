@@ -1,14 +1,16 @@
-html, body {
+html,
+body {
 	height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #FAFAFA;
-	font-family: 'Helvetica Neue', arial, sans-serif;
+	background: #fafafa;
+	font-family: "Helvetica Neue", arial, sans-serif;
 	font-weight: 400;
 	color: #444;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: auto;
 }
 
 * {
@@ -16,5 +18,47 @@ html, body {
 }
 
 #app {
-	height: 100%;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+}
+
+.control-container {
+	display: flex;
+}
+
+button {
+	width: 20%;
+	height: 32px;
+	border: 0px !important;
+	background: #3f51b5;
+	color: white;
+	font-size: 1.1rem;
+	line-height: 0;
+}
+
+input {
+	width: 80%;
+	height: 32px;
+}
+
+.list-item-count {
+	font-size: 1.3rem;
+	text-align: right;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.todo-list {
+	margin-top: 2rem;
+	text-align: left;
+}
+
+.todo-list > div {
+	height: 2rem;
+	text-align: left;
+	background-color: #e6e6e6;
+	margin-bottom: 1px;
+	padding-left: 1rem;
+	padding-top: 0.45rem;
 }

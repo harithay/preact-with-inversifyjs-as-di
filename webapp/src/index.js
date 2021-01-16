@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 import "./style/index.css";
 import App from "./components/app.tsx";
 

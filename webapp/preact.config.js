@@ -11,6 +11,7 @@ export default {
      * @param {object} options - this is mainly relevant for plugins (will always be empty in the config), default to an empty object
      **/
     webpack(config, env, helpers, options) {
+        config.module.rules[0].options.babelrc = true;
         config.module.rules[4].use.splice(1, 0, {
             loader: "@teamsupercell/typings-for-css-modules-loader",
             options: {

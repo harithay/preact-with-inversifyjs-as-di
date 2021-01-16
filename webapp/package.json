@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "preact build",
-    "serve": "sirv build --port 8080 --cors --single",
-    "dev": "preact watch",
+    "serve": "sirv build  --port 3001 --cors --single",
+    "dev": "preact watch --port 3001",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "jest ./tests"
   },
@@ -23,13 +23,15 @@
     "build/*"
   ],
   "dependencies": {
+    "babel-plugin-parameter-decorator": "^1.0.16",
     "inversify": "^5.0.5",
     "inversify-inject-decorators": "^3.1.0",
     "preact": "^10.3.1",
     "preact-jsx-chai": "^3.0.0",
     "preact-markup": "^2.0.0",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "preact-router": "^3.2.1",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@teamsupercell/typings-for-css-modules-loader": "^2.2.0",
@@ -38,6 +40,7 @@
     "@types/webpack-env": "^1.15.1",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.1",
     "css-loader": "^3.5.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-preact-pure": "^2.2.0",

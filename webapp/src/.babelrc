@@ -1,5 +1,11 @@
 {
-    "presets": [ 
+    "plugins": [
+        // https://github.com/inversify/InversifyJS/issues/1004#issuecomment-642118301 
+        // Fixes @inject on constructor
+        "babel-plugin-transform-typescript-metadata",
+        "babel-plugin-parameter-decorator"
+    ],
+    "presets": [
         "preact-cli/babel"
     ]
 }
